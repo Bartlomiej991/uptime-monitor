@@ -61,7 +61,7 @@ docker run uptime-monitor
 - [x] Bash script that checks websites
 - [x] Automatic checks with cron and a log file
 - [x] Version control with Git and GitHub
-- [x ] Docker container
+- [x] Docker container
 - [ ] Web page with the results (Python, Flask)
 - [ ] CI/CD with GitHub Actions
 - [ ] Deploy to AWS with Terraform
