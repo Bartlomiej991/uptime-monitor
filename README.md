@@ -11,6 +11,13 @@ This is my first DevOps learning project. I'm building it step by step, adding a
 3. Code `200` means the site is **UP**. Any other code means it's **DOWN**.
 4. cron runs the script every 5 minutes and adds the results to `uptime.log`.
 
+## Run with Docker
+
+```bash
+docker build -t uptime-monitor .
+docker run uptime-monitor
+```
+
 ## Example output
 
 ```
@@ -33,6 +40,12 @@ To run it automatically every 5 minutes, add this line with `crontab -e`:
 ```
 */5 * * * * cd /path/to/uptime-monitor && ./check.sh >> uptime.log 2>&1
 ```
+## Run with Docker
+
+```bash
+docker build --tag uptime-monitor .
+docker run uptime-monitor
+```
 
 ## Tools used
 
@@ -41,14 +54,15 @@ To run it automatically every 5 minutes, add this line with `crontab -e`:
 - curl
 - cron
 - Git and GitHub
+- Docker
 
 ## Roadmap
 
 - [x] Bash script that checks websites
 - [x] Automatic checks with cron and a log file
 - [x] Version control with Git and GitHub
+- [x ] Docker container
 - [ ] Web page with the results (Python, Flask)
-- [ ] Docker container
 - [ ] CI/CD with GitHub Actions
 - [ ] Deploy to AWS with Terraform
 - [ ] Monitoring with Prometheus and Grafana
