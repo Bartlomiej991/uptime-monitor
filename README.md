@@ -57,6 +57,7 @@ docker run uptime-monitor
 ## Tools used
 
 - Linux (Linux Mint 22)
+>>>>>>> change-tools
 - Python 3 (requests)
 - Bash and curl
 - cron
