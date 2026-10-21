@@ -56,7 +56,7 @@ docker run uptime-monitor
 
 ## Tools used
 
-- Linux (Linux Mint)
+- Linux (Linux Mint in VirtualBox)
 - Python 3 (requests)
 - Bash and curl
 - cron
